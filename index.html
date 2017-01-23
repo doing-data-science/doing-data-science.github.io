@@ -46,8 +46,8 @@ ajax('//api.github.com/users/' + group + '/repos', function(res) {
 
     var line2 = document.createElement('td');
     var badge = document.createElement('a');
-    badge.href = '//' + group + '.github.io/' + item.full_name;
-    badge.innerHTML = group + '.github.io/' + item.full_name;
+    badge.href = '//' + group + '.github.io/' + item.name;
+    badge.innerHTML = group + '.github.io/' + item.name;
     line2.appendChild(badge);
     row.appendChild(line2);
     table.appendChild(row);
